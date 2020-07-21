@@ -2821,10 +2821,10 @@ select {
 			padding: 0;
 		}
 
-		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
-		}
+.wrapper.style1 {
+	background-color: #24c5b8;
+	color: #c8ece9;
+}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
 				color: #ffffff;
@@ -2855,7 +2855,7 @@ select {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 label {
@@ -2982,11 +2982,11 @@ select {
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background-color: #19a3f3f0; #good tiles F7A400
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #505393; 
 			color: #d3d4e4;
 		}
 
@@ -3196,7 +3196,7 @@ select {
 			.wrapper.style5 input[type="tel"],
 			.wrapper.style5 select,
 			.wrapper.style5 textarea {
-				background-color: rgba(0, 0, 0, 0.0375);
+				background-color: rgba(0, 0, 0, 0.1);
 			}
 
 			.wrapper.style5 select {
@@ -3448,20 +3448,20 @@ select {
 
 /* Header */
 
-	#header {
-		-moz-transition: background-color 0.2s ease;
-		-webkit-transition: background-color 0.2s ease;
-		-ms-transition: background-color 0.2s ease;
-		transition: background-color 0.2s ease;
-		background: #2e3842;
-		height: 3em;
-		left: 0;
-		line-height: 3em;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 10000;
-	}
+#header {
+	-moz-transition: background-color 0.2s ease;
+	-webkit-transition: background-color 0.2s ease;
+	-ms-transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease;
+	background: #9898e2;
+	height: 3em;
+	left: 0;
+	line-height: 3em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
 
 		#header h1 {
 			-moz-transition: opacity 0.2s ease;
