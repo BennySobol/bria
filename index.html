@@ -26,8 +26,8 @@
 							<a href="#menu" class="menuToggle"><span>תפריט</span></a>
 							<div id="menu">
 								<ul>
-									<li><a href="index.html">בית</a></li>
-									<li><a href="generic.html">רגיל</a></li>
+									<li><a href="index.html">ראשי</a></li>
+									<li><a href="generic.html">אודות</a></li>
 									<li><a href="elements.html">חומרי עזר</a></li>
 								</ul>
 							</div>
@@ -138,24 +138,30 @@
 						<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc41iaM6zRa4OM9F4mbwhtpXHqe9TB_AdMRHjYmAUJnChm6AQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 							<h2>צור קשר</h2>
 							<div class="row gtr-uniform">
+
 								<div class="col-6 col-12-xsmall">
-									<input type="text" name="entry.405224330" id="entry.405224330" value="" placeholder="שם" />
+									<input type="email" name="entry.100933666" id="entry.100933666" value="" dir="auto" placeholder="כתובת מייל" required/>
+								</div>
+								
+								<div class="col-6 col-12-xsmall">
+									<input type="tel" name="entry.768031553" id="entry.768031553" value="" dir="auto" placeholder="טלפון" required/>
 								</div>
 
-								<div class="col-6 col-12-xsmall" dir="ltr">
-									<input type="tel" name="entry.768031553" id="entry.768031553" value="" placeholder="טלפון" />
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="entry.405224330" id="entry.405224330" value="" dir="auto" placeholder="שם" required/>
 								</div>
-
-								<div class="col-6 col-12" dir="ltr">
-									<input type="email" name="entry.100933666" id="entry.100933666" value="" placeholder="כתובת מייל" />
-								</div>
-
-								<div class="col-6 col-12">
-									<input type="text" name="entry.723836246" id="entry.723836246" value="" placeholder="נושא" />
+								
+								<div class="col-6 col-12-xsmall">
+									<select name="entry.723836246" id="entry.723836246">
+										<option value="לא נבחר נושא">- נושא -</option>
+										<option value="פגישת יעוץ">פגישת יעוץ</option>
+										<option value="קביעת תור">קביעת תור</option>
+										<option value="אחר">אחר</option>
+									</select>
 								</div>
 
 								<div class="col-12">
-									<textarea name="entry.783577808" id="entry.783577808" placeholder="כתוב את ההודעה שלך" rows="6"></textarea>
+									<textarea name="entry.783577808" id="entry.783577808" dir="auto" placeholder="כתוב את ההודעה שלך" rows="6" required></textarea>
 								</div>
 								<div class="col-12">
 									<ul class="actions">
@@ -205,8 +211,8 @@
 
 
 				<ul class="copyright">
-					<li>&copy; Untitled</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Bria</li>
+					<li>Design: HTML5 UP</li>
 				</ul>
 			</footer>
 
@@ -233,5 +239,7 @@
 				$('#gform').prepend('<h2>ההודעה נשלחה בהצלחה</h2>');
 			});
 		</script>
+
+			</script>
 	</body>
 </html>

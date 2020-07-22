@@ -1827,6 +1827,12 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 	}
 
+/* set placeholder dir to rtl */
+/* webkit solution */
+::-webkit-input-placeholder { text-align:right; }
+/* mozilla solution */
+input:-moz-placeholder { text-align:right; }
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1846,6 +1852,7 @@ textarea {
 	padding: 0 1em;
 	text-decoration: none;
 	width: 100%;
+	resize: none;
 }
 
 	input[type="text"]:invalid,
@@ -2563,7 +2570,7 @@ select {
 			padding: 4em 4em 2em 6em ;
 			display: block;
 			position: relative;
-			text-align: left;
+			text-align: right;
 			width: 50%;
 		}
 
@@ -3702,7 +3709,7 @@ select {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #2e3842;
+			background: #9898e2;  /* mark - banner ease out color */
 			display: block;
 			width: 100%;
 			height: 100%;
