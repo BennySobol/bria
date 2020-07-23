@@ -1,5 +1,4 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
 	Spectral by HTML5 UP
@@ -1827,12 +1826,6 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 	}
 
-/* set placeholder dir to rtl */
-/* webkit solution */
-::-webkit-input-placeholder { text-align:right; }
-/* mozilla solution */
-input:-moz-placeholder { text-align:right; }
-
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1979,24 +1972,31 @@ select {
 		border-radius: 100%;
 	}
 
+
+/* set placeholder dir to rtl */
+
 	::-webkit-input-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
+		text-align:right;
 	}
 
 	:-moz-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
+		text-align:right;
 	}
 
 	::-moz-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
+		text-align:right;
 	}
 
 	:-ms-input-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
+		text-align:right;
 	}
 
 /* Box */
@@ -2616,7 +2616,7 @@ select {
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #66edff;  /*marker icons*/
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2829,7 +2829,7 @@ select {
 		}
 
 .wrapper.style1 {
-	background-color: #24c5b8;
+	background-color: #9898e2; /*marker lower 2 text background*/
 	color: #c8ece9;
 }
 
@@ -2989,12 +2989,12 @@ select {
 			}
 
 		.wrapper.style2 {
-			background-color: #19a3f3f0; #good tiles F7A400
+			background-color: #35e9daf7; /*marker tiles background*/
 		}
 
 		.wrapper.style3 {
-			background-color: #505393; 
-			color: #d3d4e4;
+			background-color: #ba47d1;             /*marker icons background*/
+			color: #fef5fc;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -3157,7 +3157,7 @@ select {
 		}
 
 		.wrapper.style5 {
-			background-color: #ffffff;
+			background-color: #fdf9ed;
 			color: #4E4852;
 		}
 
@@ -3460,7 +3460,7 @@ select {
 	-webkit-transition: background-color 0.2s ease;
 	-ms-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
-	background: #9898e2;
+	background: #e298c8; /*marker header color*/
 	height: 3em;
 	left: 0;
 	line-height: 3em;
@@ -3709,7 +3709,7 @@ select {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #9898e2;  /* mark - banner ease out color */
+			background: #9898e2;  /* marker - banner ease out color */
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -3991,7 +3991,7 @@ select {
 	}
 
 	body.landing #footer {
-		background-color: rgba(29, 36, 42, 0.9);
+		background-color: #8a3a84d9;
 	}
 
 	body.is-mobile.landing #page-wrapper {
