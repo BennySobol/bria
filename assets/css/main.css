@@ -4009,6 +4009,6 @@ select {
 		background-size: cover;
 	}
 
-	body.is-mobile.landing #footer {
-		background-color: #1d242a;
+	body.is-mobile.landing #footer {   /**marker mobile footer/
+		background-color: #8a3a84d9;
 	}
