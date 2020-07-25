@@ -177,22 +177,22 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.35em;
-		line-height: 1.75em;
+		font-size: 1.5em;
+		line-height: 0.75em;
 	}
 
 		@media screen and (max-width: 736px) {
 
 			h2 {
-				font-size: 1.1em;
-				line-height: 1.65em;
+				font-size: 1.5em;
+				line-height: 0.65em;
 			}
 
 		}
 
 	h3 {
-		font-size: 1.15em;
-		line-height: 1.75em;
+		font-size: 1.5em;
+		line-height: 0.75em;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -2829,7 +2829,7 @@ select {
 		}
 
 .wrapper.style1 {
-	background-color: #9898e2; /*marker lower 2 text background*/
+	background-color: #8585e0; /*marker second text background*/
 	color: #c8ece9;
 }
 
@@ -2993,7 +2993,7 @@ select {
 		}
 
 		.wrapper.style3 {
-			background-color: #ba47d1;             /*marker icons background*/
+			background-color: #8585e0;      /*marker background of icons */
 			color: #fef5fc;
 		}
 
@@ -3026,7 +3026,7 @@ select {
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: #ffffff;
 			}
 
 			.wrapper.style3 label {
@@ -3388,6 +3388,7 @@ select {
 				border-top: solid 1px rgba(0, 0, 0, 0.125);
 				margin: 0.5em 0 0 0;
 				padding: 0.5em 0 0 0;
+				text-align: right;
 			}
 
 				#menu ul > li:first-child {
@@ -3400,7 +3401,7 @@ select {
 					border: 0;
 					color: inherit;
 					display: block;
-					font-size: 0.8em;
+					font-size: 1.1em;
 					letter-spacing: 0.225em;
 					outline: 0;
 					text-decoration: none;
@@ -3460,7 +3461,7 @@ select {
 	-webkit-transition: background-color 0.2s ease;
 	-ms-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
-	background: #e298c8; /*marker header color*/
+	background: #f49b94; /*marker top header color*/
 	height: 3em;
 	left: 0;
 	line-height: 3em;
@@ -3609,7 +3610,7 @@ select {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 2.75em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -3644,13 +3645,15 @@ select {
 			}
 
 		#banner p {
-			letter-spacing: 0.225em;
+			letter-spacing: 0.135em;
 			text-transform: uppercase;
+			font-size: 1.5em;
 		}
 
 			#banner p a {
 				color: inherit;
 			}
+
 
 		#banner .more {
 			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
@@ -3668,10 +3671,10 @@ select {
 			border: none;
 			bottom: 0;
 			color: inherit;
-			font-size: 0.8em;
-			height: 8.5em;
+			font-size: 1em;
+			height: 8em;
 			left: 50%;
-			letter-spacing: 0.225em;
+			letter-spacing: 0.195em;
 			margin-left: -8.5em;
 			opacity: 1;
 			outline: 0;
@@ -3709,7 +3712,7 @@ select {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #9898e2;  /* marker - banner ease out color */
+			background: #8585e0;  /* marker - banner ease out color */
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -3728,7 +3731,7 @@ select {
 			}
 
 				#banner h2 {
-					font-size: 1.25em;
+					font-size: 2.25em;
 				}
 
 				#banner br {
@@ -3841,7 +3844,7 @@ select {
 	}
 
 		#main > header h2 {
-			font-size: 1.75em;
+			font-size: 2.75em;
 			margin: 0 0 0.5em 0;
 		}
 
@@ -4009,6 +4012,6 @@ select {
 		background-size: cover;
 	}
 
-	body.is-mobile.landing #footer {   /**marker mobile footer/
+	body.is-mobile.landing #footer {   /*marker mobile footer*/
 		background-color: #8a3a84d9;
 	}
