@@ -166,7 +166,7 @@ input, select, textarea {
 		color: #fff;
 		font-weight: 800;
 		letter-spacing: 0.225em;
-		line-height: 1em;
+		line-height: 0.8em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
@@ -177,7 +177,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		line-height: 0.75em;
 	}
 
