@@ -17,6 +17,8 @@
 		<meta name="description" content="בריאה">
 		<meta name="author" content="גלי סובול">
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>function onSubmit(token){ document.getElementById("gform").submit(); }</script>
 
 	</head>
 	<body class="landing is-preload">
@@ -171,12 +173,17 @@
 									<textarea name="entry.783577808" id="entry.783577808" dir="auto" placeholder="כתוב את ההודעה שלך" rows="6" required></textarea>
 								</div>
 								
-								<div class="g-recaptcha" data-sitekey="6Lfyh9IZAAAAAMswwy50lAEOgHREvKkrFmxAvppK"></div>
+								<!--<div class="g-recaptcha" data-sitekey="6Lfyh9IZAAAAAMswwy50lAEOgHREvKkrFmxAvppK"></div>-->
 								<div class="col-12">
 									<ul class="actions">
-										<li><input type="submit" class="primary" value="  שלח הודעה  "/></li>
+										<li><input type="submit" class="primary g-recaptcha" value="  שלח הודעה  " 	data-sitekey="6LetftIZAAAAALEPcCKOuJ37-In1BGr_C9y86XjP"data-callback="onSubmit">
+
 									</ul>
 								</div>
+								<small dir="ltr">This site is protected by reCAPTCHA and the Google 
+    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+</small>
 							</div>
 						</form>
 					</section>
@@ -227,7 +234,6 @@
 		</div>
 
 		<!-- Scripts -->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -238,14 +244,8 @@
 		<script src="assets/js/jquery.min.js"></script>
 		<script type="text/javascript">
 			$('#gform').on('submit', function (e) {
-				$('#gform *').slideUp(400, function () {
-					console.log('Done!');
-				}).fadeOut({
-					duration: 400,
-					queue: false
-				});
-				$('#gform').prepend('<h2>ההודעה נשלחה בהצלחה</h2>');
-			});
+				$('#gform *').slideUp(400).fadeOut({duration: 400, queue: false });
+				$('#gform').prepend('<h2>ההודעה נשלחה בהצלחה</h2>'); });
 		</script>
 	</body>
 </html>
