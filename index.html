@@ -18,8 +18,16 @@
 		<meta name="author" content="גלי סובול">
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script>function onSubmit(token){ document.getElementById("gform").submit(); }</script>
-
+	<script>
+window.onload = function() {
+  var recaptcha = document.forms["gform"]["g-recaptcha-response"];
+  recaptcha.required = true;
+   //  recaptcha.oninvalid = function(e) {
+    // do something
+    //   recaptcha.text("dss");
+   //  }
+}
+</script>
 	</head>
 	<body class="landing is-preload">
 
@@ -149,15 +157,15 @@
 							<div class="row gtr-uniform">
 
 								<div class="col-6 col-12-xsmall">
-									<input type="email" name="entry.100933666" id="entry.100933666" value="" dir="auto" placeholder="כתובת מייל" required/>
+									<input type="email" name="entry.100933666" id="entry.100933666" value="" dir="auto" placeholder="כתובת מייל" required />
 								</div>
 								
 								<div class="col-6 col-12-xsmall">
-									<input type="tel" name="entry.768031553" id="entry.768031553" value="" dir="auto" placeholder="טלפון" required/>
+									<input type="tel" name="entry.768031553" id="entry.768031553" value="" dir="auto" placeholder="טלפון" required />
 								</div>
 
 								<div class="col-6 col-12-xsmall">
-									<input type="text" name="entry.405224330" id="entry.405224330" value="" dir="auto" placeholder="שם" required/>
+									<input type="text" name="entry.405224330" id="entry.405224330" value="" dir="auto"  placeholder="שם" required />
 								</div>
 								
 								<div class="col-6 col-12-xsmall">
@@ -173,17 +181,12 @@
 									<textarea name="entry.783577808" id="entry.783577808" dir="auto" placeholder="כתוב את ההודעה שלך" rows="6" required></textarea>
 								</div>
 								
-								<!--<div class="g-recaptcha" data-sitekey="6Lfyh9IZAAAAAMswwy50lAEOgHREvKkrFmxAvppK"></div>-->
+								<div class="g-recaptcha" data-sitekey="6Lfyh9IZAAAAAMswwy50lAEOgHREvKkrFmxAvppK"></div>
 								<div class="col-12">
 									<ul class="actions">
-										<li><input type="submit" class="primary g-recaptcha" value="  שלח הודעה  " 	data-sitekey="6LetftIZAAAAALEPcCKOuJ37-In1BGr_C9y86XjP"data-callback="onSubmit">
-
+										<li><input type="submit" class="primary g-recaptcha" value="  שלח הודעה  ">
 									</ul>
 								</div>
-								<small dir="ltr">This site is protected by reCAPTCHA and the Google 
-    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-</small>
 							</div>
 						</form>
 					</section>
