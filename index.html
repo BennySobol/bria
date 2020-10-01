@@ -69,7 +69,10 @@
 			<!-- Two -->
 			<section id="two" class="wrapper alt style2">
 				<section class="spotlight">
-					<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content" dir="rtl">
+					<div class="image">
+						<img src="images/pic01.jpg" alt="">
+					</div>
+					<div class="content" dir="rtl">
 						<h2>איך זה עובד?</h2>
 						<p>מהלך הבואן הוא מאוד מובחן ומיושם בנקודות מאוד מדויקות על הגוף. זה כרוך בתנועה של רקמות רכות בצורה ספציפית. המהלך הוא מהלך מתגלגל של האגודלים ואצבעות האצבעות, ונועד לעורר את מסלולי הרקמה והעצב, וכך ליצור מוקד למוח.
 
@@ -169,7 +172,7 @@
 								</div>
 								<div class="col-12">
 									<ul class="actions">
-										<li><input type="submit" value="  שלח הודעה  " class="primary" /></li>
+										<li><input type="submit" value="  שלח הודעה  " class="primary" data-sitekey="6LeKe9IZAAAAABEEIiEErFOw-0VzNUAU0WjSVANJ" data-callback='onSubmit' data-action='submit'/></li>
 										<!--<li><input type="reset" value="אפס את הפקדים" /></li>-->
 									</ul>
 								</div>
@@ -223,6 +226,8 @@
 		</div>
 
 		<!-- Scripts -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script>function onSubmit(token){ document.getElementById("demo-form").submit();}</script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
