@@ -1,9 +1,4 @@
 ﻿<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>בריאה</title>
@@ -16,18 +11,6 @@
 		<meta name="keywords" content="בריאה, בריאות, bria, briea, briha, briah, brih, רפואה">
 		<meta name="description" content="בריאה">
 		<meta name="author" content="גלי סובול">
-
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-	<script>
-window.onload = function() {
-  var recaptcha = document.forms["gform"]["g-recaptcha-response"];
-  recaptcha.required = true;
-   //  recaptcha.oninvalid = function(e) {
-    // do something
-    //   recaptcha.text("dss");
-   //  }
-}
-</script>
 	</head>
 	<body class="landing is-preload">
 
@@ -161,7 +144,7 @@ window.onload = function() {
 								</div>
 								
 								<div class="col-6 col-12-xsmall">
-									<input type="tel" name="entry.768031553" id="entry.768031553" value="" dir="auto" placeholder="טלפון" required />
+									<input type="tel" name="entry.768031553" id="entry.768031553" value="" dir="auto" placeholder="טלפון" pattern="[0-9]+" required oninvalid="this.setCustomValidity('שדה זה חייב ליהות מספר')" oninput="setCustomValidity('')"/>
 								</div>
 
 								<div class="col-6 col-12-xsmall">
@@ -179,12 +162,10 @@ window.onload = function() {
 
 								<div class="col-12">
 									<textarea name="entry.783577808" id="entry.783577808" dir="auto" placeholder="כתוב את ההודעה שלך" rows="6" required></textarea>
-								</div>
-								
-								<div class="g-recaptcha" data-sitekey="6Lfyh9IZAAAAAMswwy50lAEOgHREvKkrFmxAvppK"></div>
+								</div>			
 								<div class="col-12">
 									<ul class="actions">
-										<li><input type="submit" class="primary g-recaptcha" value="  שלח הודעה  ">
+										<li><input type="submit" class="primary" value="  שלח הודעה  ">
 									</ul>
 								</div>
 							</div>
