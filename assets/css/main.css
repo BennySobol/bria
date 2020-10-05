@@ -3797,12 +3797,19 @@ select {
 			width: 30%;
 		}
 
+			 .logo {
+				  width:251px;
+				}
+				
 		@media screen and (max-width: 980px) {
 
-			#cta .inner {
-				display: block;
-				text-align: center;
-			}
+				 .logo {
+				  width:230px;
+				}
+				#cta .inner {
+					display: block;
+					text-align: center;
+				}
 
 				#cta .inner header {
 					padding-right: 0;
@@ -3820,6 +3827,9 @@ select {
 
 		@media screen and (max-width: 736px) {
 
+				 .logo {
+				  width:177px;
+				}
 			#cta .inner .actions {
 				max-width: none;
 			}
@@ -3858,7 +3868,7 @@ select {
 			}
 
 		@media screen and (max-width: 1680px) {
-
+	
 			#main > header {
 				padding: 10em 0 8em 0 ;
 			}
@@ -3902,7 +3912,7 @@ select {
 
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		background-color: #8a3a84d9;
 		text-align: center;
 	}
 

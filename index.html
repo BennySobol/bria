@@ -38,7 +38,8 @@
 			<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-				
+				 <img class="logo" src="images/logo.jpeg" style="border-radius:4%;" alt="בריאה" />	</div>
+				<div class="inner">
 					<h2>בריאה</h2>
 					<p>
 						לגעת לראות להבין<br />
@@ -138,11 +139,10 @@
 						<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc41iaM6zRa4OM9F4mbwhtpXHqe9TB_AdMRHjYmAUJnChm6AQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 							<h2>צור קשר</h2>
 							<div class="row gtr-uniform">
-
 								<div class="col-6 col-12-xsmall">
-									<input type="email" name="entry.100933666" id="entry.100933666" value="" dir="auto" placeholder="כתובת מייל" required />
-								</div>
-								
+									<input type="email" name="entry.100933666" id="entry.100933666" value="" dir="auto" placeholder="כתובת מייל" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required oninvalid="this.setCustomValidity('כתובת מייל זו אינה תקינה')" oninput="setCustomValidity('')"/>
+								</div>                                                                                                                         
+								 
 								<div class="col-6 col-12-xsmall">
 									<input type="tel" name="entry.768031553" id="entry.768031553" value="" dir="auto" placeholder="טלפון" pattern="[0-9]+" required oninvalid="this.setCustomValidity('שדה זה חייב ליהות מספר')" oninput="setCustomValidity('')"/>
 								</div>
