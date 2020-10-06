@@ -3796,18 +3796,14 @@ select {
 
 			 .logo {
 				  width:251px;
-				  -webkit-box-shadow: 0px 0px 45px 50px #fff;
-                  -moz-box-shadow: 0px 0px 45px 50px #fff;
-                  box-shadow: 0px 0px 45px 50px #fff; 
+	
 				}
 				
 		@media screen and (max-width: 980px) {
 
 				 .logo {
 				  width:230px;
-			      -webkit-box-shadow: 0px 0px 35px 40px #fff;
-                  -moz-box-shadow: 0px 0px 35px 40px  #fff;
-                  box-shadow: 0px 0px 35px 40px #fff; 
+
 				}
 				#cta .inner {
 					display: block;
@@ -3832,9 +3828,7 @@ select {
 
 				 .logo {
 				  width:177px;
-			      -webkit-box-shadow: 0px 0px 20px 25px #fff;
-                  -moz-box-shadow: 0px 0px 20px 25px  #fff;
-                  box-shadow: 0px 0px 20px 25px #fff; 
+
 				}
 			#cta .inner .actions {
 				max-width: none;
