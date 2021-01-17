@@ -3794,10 +3794,11 @@ select {
 			width: 30%;
 		}
 
-			 .logo {
-				  width:251px;
-	
-				}
+		.logo {
+            width:251px;
+			-webkit-filter: drop-shadow(2px 2px 2px white) drop-shadow(-2px -2px 2px white) drop-shadow(2px -2px 2px white) drop-shadow(-2px 2px 2px white);
+			filter: drop-shadow(2px 2px 2px white) drop-shadow(-2px -2px 2px white) drop-shadow(2px -2px 2px white) drop-shadow(-2px 2px 2px white);
+        }
 				
 		@media screen and (max-width: 980px) {
 
