@@ -3795,7 +3795,7 @@ select {
 		}
 
 		.logo {
-            width:251px;
+            width:400px;
 			-webkit-filter: drop-shadow(2px 2px 2px white) drop-shadow(-2px -2px 2px white) drop-shadow(2px -2px 2px white) drop-shadow(-2px 2px 2px white);
 			filter: drop-shadow(2px 2px 2px white) drop-shadow(-2px -2px 2px white) drop-shadow(2px -2px 2px white) drop-shadow(-2px 2px 2px white);
         }
@@ -3803,7 +3803,7 @@ select {
 		@media screen and (max-width: 980px) {
 
 				 .logo {
-				  width:230px;
+				  width:350px;
 
 				}
 				#cta .inner {
@@ -3828,7 +3828,7 @@ select {
 		@media screen and (max-width: 736px) {
 
 				 .logo {
-				  width:177px;
+				  width:90%;
 
 				}
 			#cta .inner .actions {
