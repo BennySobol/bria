@@ -4062,13 +4062,30 @@ select {
 		}
 
 		* {
-			/* box-sizing: border-box!important; */
 			/* color: #2D2D2D!important; */
-			/* cursor: default!important; */
 			font-family: "Open Sans Hebrew","Helvetica Neue",tahoma,Helvetica,Arial,sans-serif!important;
-			/* min-height: 100%!important; */
-			/* overflow-anchor: auto!important; */
-			/* overflow-x: hidden!important; */
-			/* -ms-text-size-adjust: 100%!important; */
-			/* -webkit-text-size-adjust: 100%!important; */
+		}
+
+		
+		@media screen and (max-width: 736px)
+		{
+		#four {
+				padding: 3em 2em 3em 2em;
+				background-size: auto 150%;
+			}
+		}
+		@media screen and (max-width: 840px)
+		{
+			#four {
+				padding: 3.5em;
+				background-size: 200% auto;
+			}
+        }
+
+		@media screen and (max-width: 1080px)
+		{
+			#four {
+				padding: 4em 0 4em 0;
+				background-size: auto, 175% auto;
+			}
 		}
