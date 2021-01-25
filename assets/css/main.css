@@ -4034,3 +4034,41 @@ select {
 	body.is-mobile.landing #footer {   /*marker mobile footer*/
 		background-color: #8a3a84d9;
 	}
+
+
+
+
+	#four {
+		position: relative;
+		color: #fff;
+		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+		text-align: center;
+		background: #35b88f url("images/triangle.svg") bottom center no-repeat;
+		padding: 5em 0 5em 0;
+		margin: 0;
+		background-size: 125% auto;
+	}
+
+		#four .button {
+			color: #35b882;
+			background: #fff;
+			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+			border-radius: 3em;
+		}
+		#four .button:hover {
+			color: #fff;
+			background: transparent;
+			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+		}
+
+		* {
+			/* box-sizing: border-box!important; */
+			/* color: #2D2D2D!important; */
+			/* cursor: default!important; */
+			font-family: "Open Sans Hebrew","Helvetica Neue",tahoma,Helvetica,Arial,sans-serif!important;
+			/* min-height: 100%!important; */
+			/* overflow-anchor: auto!important; */
+			/* overflow-x: hidden!important; */
+			/* -ms-text-size-adjust: 100%!important; */
+			/* -webkit-text-size-adjust: 100%!important; */
+		}
