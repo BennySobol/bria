@@ -12,7 +12,7 @@
 		<meta name="description" content="בריאה">
 		<meta name="author" content="גלי סובול">
 	</head>
-	<body class="landing is-preload">
+	<body class="landing is-preload" onload="checkFirstVisit()">
 
 		<!-- Page Wrapper -->
 		<div id="page-wrapper">
@@ -26,9 +26,11 @@
 							<a href="#menu" class="menuToggle"><span>תפריט</span></a>
 							<div id="menu">
 								<ul>
-									<li><a href="index.html#banner">ראשי</a></li>
-									<li><a href="generic.html">אודות</a></li>
-                                    <li><a href="#form">צור קשר</a></li> 									
+									<li><a id="index-link" href="index.html#banner" onclick="underline_index_link()"><u>ראשי</u></a></li>
+									<li><a href="about.html">אודות</a></li>
+									<li><a id="form-link" href="index.html#form" onclick="underline_form_link()">צור קשר</a></li> 
+									<li><a href="treatments.html">סוגי הטיפולים</a></li>
+									<li><a href="gallery.html">גלריה</a></li>								
 								</ul>
 							</div>
 						</li>
@@ -54,6 +56,8 @@
 					<header class="major" dir="rtl">
 						<h2>מהי טכניקת בואן?</h2>
 						<p>
+
+							
 בואן היא טכניקת גוף מתקנת הוליסטית עדינה שעובדת על רקמת החיבור הרכה של הגוף. ניתן להשתמש בטיפול באמצעות מעיים לטיפול בבעיות נוירולוגיות שלד-שריר או קשורות, כולל פציעות ספורט חריפות ומצבים כרוניים או אורגניים. זה עובד עם רקמות החיבור של הגוף כדי לקדם את הפחתת הכאב ולשפר את אנרגיית הגוף.
 						</p>
 					</header>
@@ -142,14 +146,14 @@
 					הקלה לאורך זמן מושגת לרוב עם 3 עד 6 טיפולים<br />
 					הטיפול הינו טיפול פיזי ורגשי כאחד</p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">כפתור שלא עושה כלום</a>
+					<a href="treatments.html" class="button style2 scrolly">קרא עוד על סוגי הטיפולים</a>
 				</footer>
 			</section>
 
 			<section id="form" class="wrapper style5" dir="rtl">
 				<div class="inner">
 					<section>
-						<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc41iaM6zRa4OM9F4mbwhtpXHqe9TB_AdMRHjYmAUJnChm6AQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+						<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc41iaM6zRa4OM9F4mbwhtpXHqe9TB_AdMRHjYmAUJnChm6AQ/formResponse?" target="hidden_iframe">
 							<h2>צור קשר</h2>
 							<div class="row gtr-uniform">
 								<div class="col-6 col-12-xsmall">
@@ -184,7 +188,7 @@
 							</div>
 						</form>
 					</section>
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 				</div>
 			</section>
 
@@ -224,6 +228,9 @@
 
 				<ul class="copyright">
 					<li>&copy; Bria</li>
+					<script>
+						document.write(Date().Date);
+                    </script>
 					<li>Design: HTML5 UP</li>
 				</ul>
 			</footer>
@@ -231,6 +238,26 @@
 		</div>
 		
 		<!-- Scripts -->
+		<script>
+			function checkFirstVisit() {
+				var queryString = decodeURIComponent(window.location);
+				var queries = queryString.split("#");
+	
+				if(queries[1] != "form")
+					underline_index_link();
+				else
+				underline_form_link();
+			}
+			function underline_form_link() {
+				document.getElementById("form-link").innerHTML = "<u>צור קשר</u>";
+				document.getElementById("index-link").innerHTML = 'ראשי';
+			}
+			function underline_index_link() {
+				document.getElementById("index-link").innerHTML = '<u>ראשי</u>';
+			    document.getElementById("form-link").innerHTML = "צור קשר";
+			}
+		</script>
+
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
