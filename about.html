@@ -71,14 +71,14 @@
 					<li>
 						<h3 class="icon solid fa-map-marker-alt"> כתובת </h3>
 						<p>
-							<a href="https://goo.gl/maps/Gr67XvZTAwNfFoNa7">בני ראם - האורן 14</a>
+							<a href="https://goo.gl/maps/Gr67XvZTAwNfFoNa7"> בני ראם - האורן 14 </a>
 						</p>
 					</li>
 
 					<li>
 						<h3 class="icon brands fa-facebook-f"> פיסבוק </h3>
 						<p>
-							<a href="https://www.facebook.com/profile.php?id=100006924195456">גלי סובול</a>
+							<a href="https://www.facebook.com/profile.php?id=100006924195456"> גלי סובול </a>
 						</p>
 					</li>
 
@@ -98,7 +98,11 @@
 
 
 				<ul class="copyright">
-					<li>&copy; Bria</li>
+					<li id="year">
+						&copy;
+						<script>document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+						Bria
+					</li>
 					<li>Design: HTML5 UP</li>
 				</ul>
 			</footer>
