@@ -3854,13 +3854,15 @@ select {
 		#main > header h2 {
 			font-size: 2.75em;
 			margin: 0 0 0.5em 0;
+			filter: drop-shadow(.05em .05em orange);
 		}
 
 		#main > header p {
 			color: inherit;
-			letter-spacing: 0.225em;
+			letter-spacing: 0.125em;
 			text-transform: uppercase;
 			top: 0;
+			filter: drop-shadow(.10em .10em orange);
 		}
 
 			#main > header p a {
