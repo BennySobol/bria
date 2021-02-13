@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 
+/*-webkit-linear-gradient(top, #5f7fd28f, #5f7fd28f), url(../../images/banner.jpg)*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -3094,9 +3095,9 @@ select {
 				border-color: rgba(0, 0, 0, 0.125);
 			}
 
-				.wrapper.style3 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(255, 255, 255, 0.075);
-				}
+			.wrapper.style3 table tbody tr:nth-child(2n + 1) {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
 
 			.wrapper.style3 table th {
 				color: #ffffff;
